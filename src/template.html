@@ -3,7 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Odin Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form-container">
+      <form action="#" class="form" novalidate>
+        <fieldset class="form__inputs">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="email-input"
+            placeholder="Example: YourEmail@gmail.com"
+            required
+          />
+          <p class="email-error-message"></p>
+          <label for="country">Country:</label>
+          <select id="country" class="country-select">
+            <option value="at">Austria</option>
+            <option value="be">Belgium</option>
+            <option value="de">Germany</option>
+            <option value="es">Spain</option>
+            <option value="fr">France</option>
+            <option value="gb">United Kingdom</option>
+            <option value="ie">Ireland</option>
+            <option value="it">Italy</option>
+            <option value="nl">Netherlands</option>
+            <option value="ch">Switzerland</option>
+          </select>
+          <label for="postal-code">Postal Code:</label>
+          <input
+            type="text"
+            id="postal-code"
+            class="postal-code-input"
+            placeholder="Example: 12345"
+            autocomplete="off"
+            required
+          />
+          <p class="pc-error-message"></p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="password-input"
+            placeholder="Example: VeryCoolPassword"
+            autocomplete="off"
+            required
+          />
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            class="password-input"
+            placeholder="Example: VeryCoolPassword"
+            autocomplete="off"
+            required
+          />
+          <p class="password-error-message"></p>
+        </fieldset>
+        <fieldset class="form__buttons">
+          <button type="submit" class="submit-btn">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>

@@ -11,3 +11,69 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--odin-dark);
 }
+
+/*BODY*/
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*FORM*/
+
+.form {
+  padding: 1em 2em;
+  width: 500px;
+  background-color: white;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.form__inputs input,
+.country-select {
+  border: none;
+  background-color: rgb(240, 239, 239);
+  padding: 8px 15px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form__inputs input::placeholder {
+  color: rgb(49, 49, 49);
+}
+
+fieldset {
+  padding: 1em 10px;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 18px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(28, 70, 134);
+}
+
+input.invalid {
+  outline: 1px solid red;
+}
+
+input.valid {
+  outline: 1px solid green;
+}
+
+.email-error-message,
+.pc-error-message,
+.password-error-message {
+  color: rgb(199, 54, 54);
+  font-size: 1.25rem;
+}

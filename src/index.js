@@ -1,1 +1,3 @@
-import "./styles.css";
+import eventHandler from './events.js';
+
+eventHandler();
